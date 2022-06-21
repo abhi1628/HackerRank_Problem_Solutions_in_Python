@@ -1,0 +1,12 @@
+
+# Qs Link --> https://www.hackerrank.com/challenges/swap-case/problem
+
+def swap_case(s):
+    if len(s)>0 and len(s)<=1000:
+        new_s = ''
+        for word in s:
+            if word.isupper() == True:
+                new_s += word.lower()
+            else:
+                new_s += word.upper()
+    return new_s
