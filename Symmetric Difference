@@ -1,0 +1,5 @@
+# Qs. link --> https://www.hackerrank.com/challenges/symmetric-difference/problem
+
+x, a = input(), set(map(int, input().split()))
+x, b = input(), set(map(int, input().split()))
+print(*sorted(a.symmetric_difference(b)),sep = '\n')
