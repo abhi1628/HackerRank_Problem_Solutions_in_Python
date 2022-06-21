@@ -1,0 +1,17 @@
+
+# Qs Link --> https://www.hackerrank.com/challenges/detect-html-tags-attributes-and-attribute-values/problem
+
+import re
+
+text = ''
+for _ in range(int(input())):
+    text = re.sub(r'<!.+-->',r' ',(text+input()))
+
+for x in re.findall(r'<([^/][^>]*)>', text):
+    if ' ' in x:       
+        for y in re.findall(r'([a-z]+)? *([a-z-]+)="([^"]+)', x):
+            if y[0]:
+                print(y[0])          
+            print('-> '+y[1]+' > '+y[2])
+    else:
+        print(x)
