@@ -1,0 +1,9 @@
+
+# Qs Link --> https://www.hackerrank.com/challenges/floor-ceil-and-rint/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+
+import numpy as np
+np.set_printoptions(sign=' ')
+array= np.array(input().split(), float)
+print (np.floor(array))
+print (np.ceil(array))
+print (np.rint(array))
