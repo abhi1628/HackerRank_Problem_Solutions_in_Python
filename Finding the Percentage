@@ -1,0 +1,11 @@
+
+# Qs Link --> https://www.hackerrank.com/challenges/finding-the-percentage/problem
+
+n = int(input())
+dict={}
+for line in range(n):
+    info = input().split(" ")
+    scores = list(map(float, info[1:]))
+    dict[info[0]] = sum(scores) / float(len(scores))
+
+print ("%.2f" % dict[input()])
